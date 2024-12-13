@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            float: right;
+            margin-right: 17%;
+            text-align: center;
+            width: 32%;
+            height: 100vh;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        a:hover {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: rgb(82, 79, 79);">
+    <form action="wow.html" onsubmit="return validation()">
+        <div>
+            <img src="../images/watch bg.jpg" style="width: 50%;width: 72vh; float: left;margin-left: 16.5%; " alt="">
+        </div>
+        <div class="header">
+            <h1
+                style="font-size: 250%;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(4, 42, 56);">
+                <img src="../websiteimages/wrist envy.avif" alt=""></h1>
+            <p style="font-size: 100%;">Welcome To Wrist Envy</p>
+            <label for="" style="color: red;display: none;" id="nameError">Error:Enter First Your Email and Password
+            </label>
+            <br>
+            <label style="font-size: 90%; margin-left: -28%;" for="">Username or Email</label><br>
+
+            <input
+                style=" font-size: 110%; border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px; "
+                type="text,email" id="name"><br>
+
+            <label style="font-size: 90%;margin-left: -40%;" for="">Password</label><br>
+
+            <input
+                style=" font-size: 110%; border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px; "
+                type="password">
+            <br>
+            <a style="font-size: 60%;margin-right: -28%; " href="">Forget password</a><br>
+            <input
+                style=" width: 30%;background-color: rgb(169, 169, 169);color: rgb(4, 4, 4);font-size: 120%; border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px; margin-top: 10%;"
+                type="submit" value="Sign in" name="" id="">
+            <p style="margin-top: 10%;">-------or-------</p>
+            <br>
+            <img src="../images/google-symbol.png" style="width: 15px;height: 15px; margin-right: 5px;" alt=""><a
+                style="color: rgb(1, 1, 1);font-size: 120%; margin-top: 2%;" href="">Sign in with Google</a>
+
+            <p style="font-size: 80%; margin-top: 9%;">New TimeZone?<a href="">Create Account</a></p>
+
+        </div>
+
+    </form>
+    <script>
+        function validation() {
+            let x = document.getElementById('name').value;
+            if (x == "") {
+                document.getElementById('nameError').style.display = 'inline';
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
